@@ -7,13 +7,13 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install ssh ovpn
-wget https://raw.githubusercontent.com/Exe303/Bless/main/Ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Andyyuda/projek-klmpk/main/Ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #Install Script Add Domain
-wget https://raw.githubusercontent.com/Exe303/Bless/main/Tunnel/acelltun.sh && chmod +x acelltun.sh && screen -S v2ray ./acelltun.sh
+wget https://raw.githubusercontent.com/Andyyuda/projek-klmpk/main/Tunnel/acelltun.sh && chmod +x acelltun.sh && screen -S v2ray ./acelltun.sh
 #Install Script SshUdp
-wget https://raw.githubusercontent.com/Exe303/Bless/main/Tunnel/udp.sh && bash udp.sh
+wget https://raw.githubusercontent.com/Andyyuda/projek-klmpk/main/Tunnel/udp.sh && bash udp.sh
 #Install Script AutoBackup
-wget https://raw.githubusercontent.com/Exe303/Bless/main/Backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/Andyyuda/projek-klmpk/main/Backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/acelltun.sh
 rm -f /root/udp.sh
@@ -33,7 +33,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/Exe303/Bless/main/Ssh/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/Andyyuda/projek-klmpk/main/Ssh/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
